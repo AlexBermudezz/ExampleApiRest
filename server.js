@@ -30,6 +30,10 @@ app.get('/users', (req, res) => {
     res.send(users)
 })
 
+app.get('/books', (req, res) => {
+    res.send(books)
+})
+
 // URL para eliminar un usuario
 // http://127.0.0.1:5000/users
 app.post('/users', (req, res) => {
