@@ -7,10 +7,10 @@ const hostname = '127.0.0.1';
 const PORT = process.env.PORT || 5000
 
 let users = ['oscar', 'juan', 'marcos', 'julieta', 'alexander',];
-let books = [
+let books = [ [Periodo Germinal
     {titulo: 'El señor de los anillos', autor: 'J.R.R. Tolkien'},
     {titulo: "Cancion de hielo y fuego", autor: 'George RR Martin'}
-];
+]];
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
