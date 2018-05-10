@@ -7,7 +7,7 @@ const hostname = '127.0.0.1';
 const PORT = process.env.PORT || 5000
 
 let PGerminal = [
-    {periodo:"semana 1",estado: "El embrion no tiene caracteristicas distintivas " },  
+    {periodo:"semana 1", estado: "El embrion no tiene caracteristicas distintivas ", },  
 ];
 
 app.use(bodyParser.json());
@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/PGerminal', (req, res) => {
-    res.send(books)
+    res.send(PGerminal)
 })
 
 http.createServer(app).listen(PORT, () => {
