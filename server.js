@@ -7,10 +7,11 @@ const hostname = '127.0.0.1';
 const PORT = process.env.PORT || 5000
 
 let Etapas= [
-    {periodo:"Etapa 1", estado: "El embrion no tiene caracteristicas distintivas ", },  
-	{periodo:"Etapa 2", estado: "El embrion pasa a llamarse feto ", },
-	{periodo:"Etapa 3", estado: "En una ecografia se puede detectar los brazos, piernas y sexo de la criatura", },  
-	{periodo:"Etapa 4", estado: "El feto esta completamente desarrollado y listo para nacer", },  
+    {id: "1", periodo:"PRIMER TRIMESTRE", 
+	semana: [
+	{id:"11", semana:"Semana 1", descripción:"Se ha producido la fecundación y la implantación en el endometrio.	Por regla general, esta semana pasa desapercibida para la madre, puesto que los cambios que se han empezado a producir a nivel hormonal, todavía no afectan al humor o al estado físico de la madre.",},
+	]
+	},  
 ];
 
 app.use(bodyParser.json());
