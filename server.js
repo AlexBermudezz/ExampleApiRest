@@ -45,7 +45,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get('/', (req, res) => {
-    res.status(200).send("Welcome to API REST")
+    res.status(200).send
+	("Bienvenid@ !!! Aqui encontraras información acerca de las etapas y cuidados del embarazo. Pega el siguiente link https://alexbermudezapirestuser.herokuapp.com/etapas en tu navegador")
 })
 
 app.get('/Etapas', (req, res) => {
